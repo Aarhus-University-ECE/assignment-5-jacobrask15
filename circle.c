@@ -24,7 +24,7 @@ bool circleIsValid(const circle * c) {
 /*post: answer to exercise 6.c*/
 }
 
-/* adds a point p to x and y of circle */
+/* adds a point p to x and y of circle d*/
 void translate(circle* c, const point* p) {
 	c->p.x += p->x;
 	c->p.y += p->y;
