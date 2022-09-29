@@ -1,7 +1,7 @@
 #pragma once
 #include <stdbool.h>
 
-typedef struct point {
+typedef struct {
 	int x;
 	int y;
 } point;

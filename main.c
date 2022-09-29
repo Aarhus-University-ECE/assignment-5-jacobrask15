@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include<malloc.h>
+#include <malloc.h>
 #include "circle.h"
-#include"jollyjumper.h"
+#include "jollyjumper.h"
 #include <stdbool.h>
 #include <assert.h>
 
@@ -30,7 +30,7 @@ int main(void) {
 
 	int *numbers = malloc(sizeof(int) * n); /*the numbers read*/
 
-	/*readin the n numbers in the array numbers*/
+	/*read in the n numbers in the array numbers*/
 	for (int i = 0; i < n; i++)
   		scanf("%d", &numbers[i]);
 
@@ -39,7 +39,7 @@ int main(void) {
 		printf("it is a Jolly Jumper");}
 	else {
 		printf("not a Jolly Jumper");}
-		
+
 	return 0;
 
 }
