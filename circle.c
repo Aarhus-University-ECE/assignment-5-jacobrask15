@@ -1,16 +1,7 @@
 #include <malloc.h>
 #include "circle.h"
-
-
-typedef struct {
-	int x; /* x coordinate of center point */
-	int y; /* y coordinate of center point */
-} point; 
-
-typedef struct {
-	int r; /* radius of circle */
-	struct point p; /* center point of circle */
-} circle;
+#include <stdio.h>
+#include <stdbool.h>
 
 
 void fiveCircles(circle c[]) {
@@ -23,19 +14,18 @@ void fiveCircles(circle c[]) {
 }
 
 /* pre: r > 0 */
-int circleIsValid(const circle * c) {
+bool circleIsValid(const circle * c) {
 	if ((*c).r <= 0)
-		printf("false");
+		return false;
 	else
-		printf("True");
+		return true;
 /*post: answer to exercise 6.c*/
-	return 0;
 }
 
 void translate(circle* c, const point* p) {
-	(*c).p.x += (*p).x;
-	(*c).p.y += (*p).y;
-/*ansver to exercise 6.d */
+	c->p.x += p->x;
+	c->p.y += p->y;
+/*answer to exercise 6.d */
 }
 
 
